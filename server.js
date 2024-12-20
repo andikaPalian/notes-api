@@ -9,6 +9,8 @@ app.use(cors());
 app.use(express.json());
 DB();
 
+app.use("/user", require("./routes/user.routes"));
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
