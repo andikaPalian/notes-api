@@ -10,6 +10,7 @@ app.use(express.json());
 DB();
 
 app.use("/user", require("./routes/user.routes"));
+app.use("/notes", require("./routes/notes.routes"));
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
